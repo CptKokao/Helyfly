@@ -9,9 +9,7 @@
 @import "global/mixins.scss";
 
 // Импорт компонентов
-@import "components/hamburger.scss";
-@import "components/logo.scss";
-@import "components/header.scss";
-@import "components/slider.scss";
-@import "components/tab.scss";
-@import "components/calc.scss";
+@import "components/head.scss";
+@import "components/hero.scss";
+@import "components/desc.scss";
+@import "components/gallery.scss";

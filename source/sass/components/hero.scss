@@ -1,0 +1,79 @@
+.hero {
+  height: 840px;
+  padding-top: 285px;
+  background: url("../img/helimain.jpg") center no-repeat;
+
+  @media (max-width: $mobile-width) {
+    height: 665px;
+    padding-top: 145px;
+    background: url("../img/helimain-mobile.jpg") center no-repeat;
+  }
+}
+
+.hero__title {
+  max-width: 850px;
+
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFFFFF;
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+span {
+  color: #FC9B09;
+}
+
+.hero__price {
+  display: flex;
+  width: 224px;
+  height: 96px;
+  margin-top: 23px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url("../img/border-price.svg") left no-repeat;
+
+  p {
+    position: absolute;
+    top: 2px;
+    left: 23px;
+    width: 120px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+    @media (max-width: $mobile-width) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    span {
+      font-size: 35px;
+      line-height: 53px;
+      color: #FFFFFF;
+
+      @media (max-width: $mobile-width) {
+        font-size: 30px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+.hero__img-percent {
+  position: absolute;
+  top: 7px;
+  right: -3px;
+  width: 82px;
+  height: 82px;
+}
+
+.hero__btn {
+  margin-top: 10px;
+}
