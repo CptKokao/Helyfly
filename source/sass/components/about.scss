@@ -1,0 +1,108 @@
+.about {
+  margin-top: 20px;
+  border-top: 0.5px solid #C7C7C7;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+// Левый блок
+.about__person {
+  position: relative;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-left: 82px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.about__person-img {
+  width: 139px;
+  height: 139px;
+}
+
+.about__person-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.about__person-prof {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 8px;
+}
+
+.about__person-link {
+  width: 200px;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.about__person-img-like {
+  position: absolute;
+  top: -3%;
+  right: 21%;
+  width: 31px;
+  height: 27px;
+}
+
+// Правый блок
+.about__desc {
+  width: 51%;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+
+  h2 {
+    margin-top: 36px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    margin-top: 13px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+}
+
+.about__text-short {
+  width: 80%;
+}
+
+.about__desc-link {
+  position: relative;
+  font-weight: 500;
+  line-height: 23px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -15px;
+
+    border: solid #c7c7c7;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+  }
+}

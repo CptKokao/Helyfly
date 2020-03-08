@@ -105,9 +105,27 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  // @media (max-width: $mobile-width) {
-  //   width: 188px;
-  //   height: 43px;
-  // }
+.btn-orange {
+  width: 129px;
+  height: 50px;
+
+  background: #FFFFFF;
+  border: 2px solid #FC9B09;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FC9B09;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space {
+  height: 1px;
 }

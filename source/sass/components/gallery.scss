@@ -10,6 +10,10 @@
 }
 
 .gallery__wrap {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -39,6 +43,10 @@
   line-height: 25px;
   letter-spacing: 1px;
 
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
   &:before {
     content: "";
     position: absolute;
@@ -64,4 +72,17 @@
     padding: 3px;
     transform: rotate(45deg);
   }
+}
+
+.swiper-container {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    margin-top: 15px;
+  }
+}
+
+.swiper-slide {
+  width: 276px;
 }
