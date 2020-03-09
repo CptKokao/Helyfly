@@ -12,11 +12,26 @@ if (!String.prototype.startsWith) {
 }
 
 /* Слайдер для блока tab */
-var mySwiper = new Swiper('.swiper-container', {
+var gallerySwiper = new Swiper('.gallery__container', {
   slidesPerView: 'auto',
   spaceBetween: 20,
   loop: true,
 });
+
+/* Слайдер для блока map */
+var mapSwiper = new Swiper('.map__slider-swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+    nextEl: '.map__slider-swiper-button-next',
+    prevEl: '.map__slider-swiper-button-prev',
+  },
+  pagination: {
+    el: '.map__slider-swiper-pagination',
+  },
+});
+
 
 /* Yandex карта */
 
@@ -32,7 +47,7 @@ function init(){
       // Уровень масштабирования. Допустимые значения:
       // от 0 (весь мир) до 19.
       zoom: 13,
-      controls: ['zoomControl'],
+      controls: [],
       behaviors: ['drag']
   });
 

@@ -167,36 +167,36 @@
       <a class="gallery__more" href="#">Показать все фото</a>
 
       <!-- Фотогалерея мобайл-->
-      <div class="swiper-container">
+      <div class="gallery__container swiper-container ">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">        
+          <div class="swiper-slide gallery__slide">        
             <div class="gallery__img">
               <img src="./img/photo-smile.jpg" alt="Радость">
             </div>
           </div>
-          <div class="swiper-slide">        
+          <div class="swiper-slide gallery__slide">        
             <div class="gallery__img">
               <img src="./img/video.jpg" alt="Поцелуй">
             </div>
           </div>
-          <div class="swiper-slide">        
+          <div class="swiper-slide gallery__slide">        
             <div class="gallery__img">
               <img src="./img/win.jpg" alt="Победа">
             </div>
           </div>
-          <div class="swiper-slide">        
+          <div class="swiper-slide gallery__slide">        
             <div class="gallery__img">
               <img src="./img/win.jpg" alt="Победа">
             </div>
           </div>
-          <div class="swiper-slide">        
+          <div class="swiper-slide gallery__slide">        
             <div class="gallery__img">
               <img src="./img/cabin.jpg" alt="Вид из кабины">
             </div>
           </div>
-          <div class="swiper-slide">        
+          <div class="swiper-slide gallery__slide">        
             <div class="gallery__img">
               <img src="./img/video.jpg" alt="Поцелуй">
             </div>
@@ -282,8 +282,239 @@
     </section>
 
     <!-- Карта -->
-    <div class="map" id="map"></div>
+    <div class="map">
+      <div class="map__cart" id="map">
+        <!-- Блок на карте -->
+        <div class="map__block container">
+          <div class="map__wrap">
+            <ul class="map__list">
+              <li>
+                <div class="map__item-img">
+                  <img src="./img/1.svg" alt="Первый">
+                </div>
+                <div class="map__item-desc">
+                  <p class="map__item-title">Где встречаемся?</p>
+                  <p>Москва</p>
+                </div>
+              </li>
+              <li>
+                <div class="map__item-img">
+                  <img src="./img/2.svg" alt="Второй">
+                </div>
+                <div class="map__item-desc">
+                  <p class="map__item-title">Время съемки</p>
+                  <p>3 часа</p>
+                </div>
+              </li>
+              <li>
+                <div class="map__item-img">
+                  <img src="./img/3.svg" alt="Третий">
+                </div>
+                <div class="map__item-desc">
+                  <p class="map__item-title">Мест осталось:</p>
+                  <p>2 места</p>
+                </div>
+              </li>
+              <li>
+                <div class="map__item-img">
+                  <img src="./img/ivanova.png" alt="Мария Иванова">
+                </div>
+                <div class="map__item-desc">
+                  <p class="map__item-title">Мария Иванова</p>
+                  <p>Фотограф</p>
+                  <a href="#">Показать больше информации</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Слайдер для мобайл-->
+      <div class="map__slider">
+        <!-- Slider main container -->
+        <div class="map__slider-swiper-container swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="map__slider-swiper-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="map__slider-swiper-slide swiper-slide">
+                <div class="map__item-img">
+                  <img src="./img/1.svg" alt="Первый">
+                </div>
+                <div class="map__item-desc">
+                  <p class="map__item-title">Где встречаемся?</p>
+                  <p>Москва</p>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="map__slider-swiper-slide swiper-slide">
+                <div class="map__item-img">
+                  <img src="./img/2.svg" alt="Второй">
+                </div>
+                <div class="map__item-desc">
+                  <p class="map__item-title">Время съемки</p>
+                  <p>3 часа</p>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="map__slider-swiper-slide swiper-slide">
+                <div class="map__item-img">
+                  <img src="./img/3.svg" alt="Третий">
+                </div>
+                <div class="map__item-desc">
+                  <p class="map__item-title">Мест осталось:</p>
+                  <p>2 места</p>
+                </div>
+              </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="map__slider-swiper-pagination swiper-pagination"></div>
+  
+          <!-- If we need navigation buttons -->
+          <div class="map__slider-swiper-button-prev swiper-button-prev"></div>
+          <div class="map__slider-swiper-button-next swiper-button-next"></div>
+        </div>
+  
+        <div class="map__slider-desc">
+          <div class="map__item-img">
+            <img src="./img/ivanova.png" alt="Мария Иванова">
+          </div>
+          <div class="map__item-desc">
+            <p class="map__item-title">Мария Иванова</p>
+            <p>Фотограф</p>
+            <a href="#">Показать больше информации</a>
+        </div>
+  
+  
+        </div>
+      </div>
+    </div>
+
+    <!-- Отзывы -->
+    <div class="review container">
+      <h2>Отзывы</h2>
+      <div class="review__list">
+
+        <!-- Отзыв -->
+        <div class="review__item">
+
+          <div class="review__img">
+            <img src="./img/antonova.png" alt="Валерия Антонова">
+          </div>
+
+          <p class="review__title-name">Валерия Антонова</p>
+          <p class="review__title-prof">Арт-директор</p>
+          <div class="review__title-wrap">
+            <div class="review__title-rating">
+              <img src="./img/rating.svg" alt="Рейтинг">
+            </div>
+            <p class="review__extra">Супер! Я бы заказала съемку снова!</p>
+          </div>
+
+          <p class="review__text">Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!</p>
+          <p class="review__data">27 Апреля, 2019г.</p>
+        </div>
+
+        <!-- Отзыв -->
+        <div class="review__item">
+
+          <div class="review__img">
+            <img src="./img/petrov.png" alt="Виталий Петров">
+          </div>
+ 
+          <p class="review__title-name">Валерия Антонова</p>
+          <p class="review__title-prof">Фотограф</p>
+          <div class="review__title-wrap">
+            <div class="review__title-rating">
+              <img src="./img/rating.svg" alt="Рейтинг">
+            </div>
+            <p class="review__extra">Супер! Я бы заказала съемку снова!</p>
+          </div>
+
+          <p class="review__text">Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление.<br> 
+          Организация полёта отличная. Спасибо!</p>
+          <p class="review__data">19 Апреля, 2019г.</p>
+        </div>
+
+        <!-- Отзыв -->
+        <div class="review__item review__item-mobile">
+
+          <div class="review__img">
+            <img src="./img/karry.png" alt="Джим Керри">
+          </div>
+
+          <p class="review__title-name">Джим Керри</p>
+          <p class="review__title-prof"><br></p>
+          <div class="review__title-wrap">
+            <div class="review__title-rating">
+              <img src="./img/rating.svg" alt="Рейтинг">
+            </div>
+            <p class="review__extra">Супер! Я бы заказала съемку снова!</p>
+          </div>
+
+          <p class="review__text">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы 
+            с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+          <p class="review__data">11 Апреля, 2019г.</p>
+        </div>
+      </div>
+
+      <a class="review__link" href="#">Показать Все (134)</a>
+    </div>
   </main>
+
+  <footer>
+    <div class="footer container">
+
+      <div class="footer__up">
+        <div class="logo">
+          <img src="./img/logo.svg" alt="Лого">
+        </div>
+    
+        <ul class="social">
+          <li>
+            <div class="social__img">
+              <img src="./img/vk.svg" alt="Вконтакте">
+            </div>
+          </li>
+          <li>
+            <div class="social__img">
+              <img src="./img/facebook.svg" alt="Фейсбук">
+            </div>
+          </li>
+          <li>
+            <div class="social__img">
+              <img src="./img/instragram.svg" alt="Инстаграм">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <p class="local">RU</p>
+
+      <div class="footer__down">
+        <ul class="cards">
+          <li>
+            <div class="cards__img">
+              <img src="./img/mc.svg" alt="Мастеркард">
+            </div>
+          </li>
+          <li>
+            <div class="cards__img">
+              <img src="./img/visa.svg" alt="Виза">
+            </div>
+          </li>
+          <li>
+            <div class="cards__img">
+              <img src="./img/pp.svg" alt="Пейпал">
+            </div>
+          </li>
+        </ul>
+  
+        <p class="copyright">Тех. поддержка: 8(800)700-00-00<br>© 2018 HELYFLY. All Rights Reserved.</p>
+  
+      </div>
+    </div>
+  </footer>
 
 
   <script src="./js/vendor.js"></script>
