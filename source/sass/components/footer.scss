@@ -8,7 +8,6 @@
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  outline: 1px solid blueviolet;
 }
 
 .logo {
@@ -66,11 +65,13 @@
 }
 
 .footer__down {
+  background: #FAF9F8;
+}
+
+.footer__down-wrap {
   display: flex;
   align-items: center;
   height: 77px;
-  background: #FAF9F8;
-  outline: 1px solid blueviolet;
 
   @media (max-width: $mobile-width) {
     flex-direction: column;

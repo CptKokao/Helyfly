@@ -62,3 +62,51 @@ function init(){
   // Балун откроется в точке «привязки» балуна — т. е. над меткой.
   // myMap.balloon.open();
 };
+
+/* модальное окно */
+var modal = document.querySelector('.modal');
+var body = document.querySelector('body');
+var heroBtn = document.querySelector('.hero__btn');
+var overlay = document.querySelector('.overlay');
+var close = document.querySelector('.modal__close');
+var modalInput = document.querySelector('.modal [type="text"]');
+var esc = 27;
+
+/* открытие модального окна */
+heroBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (modal.classList.contains('visually-hidden')) {
+    modal.classList.remove('visually-hidden');
+    overlay.classList.remove('visually-hidden');
+    body.style.overflow = 'hidden';
+    // modalInput.focus();
+  } else {
+    modal.classList.add('visually-hidden');
+    overlay.classList.add('visually-hidden');
+    body.style.overflow = 'auto';
+  }
+});
+
+/* закрытие модального окна */
+var closeModal = function closeModal(e) {
+  modal.classList.add('visually-hidden');
+  overlay.classList.add('visually-hidden');
+  body.style.overflow = 'auto';
+};
+
+close.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
+window.addEventListener('keydown', function (e) {
+  console.log(e)
+  if (e.code === 'Escape' || e.keyCode === esc) {
+    closeModal();
+  }
+});
+
+/* маска формы телефона */
+$("#tel").mask("8(999) 999-9999");
+$("#date").mask("99.99.9999");
+$("#card").mask("99999-9999-9999-9999");
+$("#date-card").mask("99.9999");
+$("#cvv").mask("999");

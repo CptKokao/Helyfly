@@ -15,10 +15,63 @@
     <include src="build/img/sprite_auto.svg"></include>
   </div> -->
 
+  <!-- overlay -->
+  <div class="overlay visually-hidden"></div>
+
+  <!-- modal -->
+  <div class="modal visually-hidden">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Бронирование</h2>
+      <div class="modal__close"></div>
+
+      <!-- form -->
+      <form class="form modal__form" method="GET">
+        
+        <label for="date">Дата</label>
+        <div class="modal__date">
+          <input type="text" name="date" id="date" placeholder="14.09.2019" required autocomplete="on">
+          <div class="modal__date-img">
+            <img src="./img/calendar-orange.svg" alt="Календарь">
+          </div>
+        </div>
+
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Электронная почта" required autocomplete="on">
+
+        <label for="name">Имя</label>
+        <input type="text" name="name" id="name" placeholder="Имя" required autocomplete="on">
+
+        <label for="surname">Фамилия</label>
+        <input type="text" name="surname" id="surname" placeholder="Громов" required autocomplete="on">
+
+        <label for="tel">Телефон</label>
+        <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="tel" id="tel" placeholder="+7 (905) 184-81-40" required autocomplete="on">
+
+        <label for="card">Данные карты</label>
+        <div class="modal__card">
+          <input type="text" pattern="" name="card" id="card" placeholder="Номер карты" required>
+          <input type="text" pattern="" name="card" id="date-card" placeholder="Срок действия" required>
+          <input type="text" pattern="" name="card" id="cvv" placeholder="CVV" required>
+        </div>
+
+        <div class="form__group">
+          <input id="checkbox" type="checkbox" checked>
+          <label for="checkbox">Я согласен с пользовательским 
+            соглашением и публичной офертой</label>
+        </div>
+
+        <button class="modal__btn" type="submit">Забронировать</button>
+      </form>
+    </div>
+  </div>
+
   <!-- header -->
   <header>
     <div class="head container">
-      <h1>Helyfly</h1>
+      <div class="logo">
+        <img src="./img/logo.svg" alt="Лого">
+      </div>
       <div class="head__phone">
         <p>Телефон:</p>
         <a href="tel:88001231212">8(800)-123-12-12</a>
@@ -463,9 +516,9 @@
   </main>
 
   <footer>
-    <div class="footer container">
+    <div class="footer ">
 
-      <div class="footer__up">
+      <div class="footer__up container">
         <div class="logo">
           <img src="./img/logo.svg" alt="Лого">
         </div>
@@ -492,27 +545,29 @@
       <p class="local">RU</p>
 
       <div class="footer__down">
-        <ul class="cards">
-          <li>
-            <div class="cards__img">
-              <img src="./img/mc.svg" alt="Мастеркард">
-            </div>
-          </li>
-          <li>
-            <div class="cards__img">
-              <img src="./img/visa.svg" alt="Виза">
-            </div>
-          </li>
-          <li>
-            <div class="cards__img">
-              <img src="./img/pp.svg" alt="Пейпал">
-            </div>
-          </li>
-        </ul>
-  
-        <p class="copyright">Тех. поддержка: 8(800)700-00-00</br>© 2018 HELYFLY. All Rights Reserved.</p>
-  
+        <div class="footer__down-wrap container">
+          <ul class="cards">
+            <li>
+              <div class="cards__img">
+                <img src="./img/mc.svg" alt="Мастеркард">
+              </div>
+            </li>
+            <li>
+              <div class="cards__img">
+                <img src="./img/visa.svg" alt="Виза">
+              </div>
+            </li>
+            <li>
+              <div class="cards__img">
+                <img src="./img/pp.svg" alt="Пейпал">
+              </div>
+            </li>
+          </ul>
+    
+          <p class="copyright">Тех. поддержка: 8(800)700-00-00</br>© 2018 HELYFLY. All Rights Reserved.</p>
+        </div>
       </div>
+
     </div>
   </footer>
 
