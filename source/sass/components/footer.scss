@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 .footer__up {
@@ -8,6 +8,35 @@
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  padding: 0 95px;
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
+}
+
+.footer__down {
+  background: #FAF9F8;
+}
+
+.footer__down-wrap {
+  display: flex;
+  align-items: center;
+  height: 77px;
+  padding: 0 95px;
+
+  &:after{
+    content:'';
+    min-height:inherit;
+    font-size:0;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+    padding: 0 15px;
+  }
 }
 
 .logo {
@@ -21,14 +50,20 @@
 }
 
 .social {
-  width: 137px;
+  width: 210px;
   height: 26px;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-right: 70px;
+  align-items: center;
+
+  &:after{
+    content:'';
+    min-height:inherit;
+    font-size:0;
+  }
 
   @media (max-width: $mobile-width) {
+    width: 150px;
     margin-right: 0;
   }
 }
@@ -36,21 +71,25 @@
 .social__img {
   width: 26px;
   height: 26px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-.local {
-  position: absolute;
-  top: 40px;
-  right: 35px;
+.lang {
+  display: block;
+  position: relative;
   width: 40px;
   font-size: 15px;
   line-height: 18px;
+  color: #37373F;
 
   &::before {
     content: "";
     position: absolute;
     top: 2px;
-    right: 0;
+    right: 5px;
 
     border: solid #c7c7c7;
     border-width: 0 2px 2px 0;
@@ -58,32 +97,12 @@
     padding: 3px;
     transform: rotate(45deg);
   }
-
-  @media (max-width: $mobile-width) {
-    top: 105px;
-  }
-}
-
-.footer__down {
-  background: #FAF9F8;
-}
-
-.footer__down-wrap {
-  display: flex;
-  align-items: center;
-  height: 77px;
-
-  @media (max-width: $mobile-width) {
-    flex-direction: column;
-    align-items: flex-start;
-    height: 140px;
-  }
 }
 
 .cards {
   display: flex;
   justify-content: space-between;
-  width: 100px;
+  width: 165px;
 
   @media (max-width: $mobile-width) {
     width: 150px;
@@ -96,14 +115,18 @@
 }
 
 .copyright {
-  margin-left: 250px;
+  margin-left: 22%;
   font-size: 14px;
   line-height: 17px;
-  color: #B3B3B3;
+  color: #b3b3b3;
+  letter-spacing: 0.5px;
+
+  a {
+    color: #b3b3b3;
+  }
 
   @media (max-width: $mobile-width) {
+    margin-top: 15px;
     margin-left: 0;
-    align-self: center;
-
   }
 }

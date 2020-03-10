@@ -1,9 +1,17 @@
 .map {
   margin-top: 80px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 45px;
+  }
 }
 
 .map__cart {
   height: 510px;
+
+  @media (max-width: $mobile-width) {
+    height: 423px;
+  }
 }
 
 .map__block {
@@ -58,6 +66,11 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 35px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 15px;
+    letter-spacing: 0;
+  }
 }
 
 /* Слайдер */
@@ -67,16 +80,15 @@
   @media (max-width: $mobile-width) {
     display: block;
     min-height: 380px;
-    margin: 30px 15px;
+    margin: 50px 20px 30px;
     border: 1px solid #C7C7C7;
   }
-
 }
 
 .map__slider-swiper-container {
   max-width: 767px;
   min-height: 150px;
-  margin: 30px 15px;
+  padding: 55px 15px 30px;
   background: #FFFFFF;
 }
 

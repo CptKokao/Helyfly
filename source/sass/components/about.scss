@@ -7,22 +7,25 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+    border-top: none;
   }
 }
 
 // Левый блок
 .about__person {
   position: relative;
-  width: 49%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 70px;
-  margin-left: 82px;
+  padding-left: 60px;
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    margin-top: 30px;
     margin-left: 0;
+    padding-left: 0;
   }
 }
 
@@ -56,25 +59,33 @@
 .about__person-img-like {
   position: absolute;
   top: -3%;
-  right: 21%;
+  right: 20%;
   width: 31px;
   height: 27px;
+
+  @media (max-width: $mobile-width) {
+    right: 0;
+  }
 }
 
 // Правый блок
 .about__desc {
-  width: 51%;
+  width: 50%;
 
   @media (max-width: $mobile-width) {
     width: 100%;
   }
 
-  h2 {
+  h3 {
     margin-top: 36px;
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 1px;
+
+    @media (max-width: $mobile-width) {
+      margin-top: 25px;
+    }
   }
 
   p {
@@ -92,7 +103,8 @@
 .about__leader-link {
   position: relative;
   font-weight: 500;
-  line-height: 23px;
+  line-height: 45px;
+  letter-spacing: 1px;
 
   &::after {
     content: "";

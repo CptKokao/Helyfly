@@ -2,11 +2,43 @@
   height: 840px;
   padding-top: 285px;
   background: url("../img/helimain.jpg") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/helimain@2x.jpg") center no-repeat;
+    background-size: cover;
+  }
 
   @media (max-width: $mobile-width) {
-    height: 665px;
+    height: 655px;
     padding-top: 145px;
     background: url("../img/helimain-mobile.jpg") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/helimain-mobile@2x.jpg") center no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.webp .hero {
+  background: #586882, url("../img/helimain.webp") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: #586882, url("../img/helimain@2x.webp") center no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $mobile-width) {
+    background: #586882, url("../img/helimain-mobile.webp") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: #586882, url("../img/helimain-mobile@2x.webp") center no-repeat;
+      background-size: cover;
+    }
   }
 }
 
@@ -20,6 +52,8 @@
   color: #FFFFFF;
 
   @media (max-width: $mobile-width) {
+    width: 270px;
+    max-width: 570px;
     font-size: 32px;
     line-height: 39px;
   }
@@ -38,14 +72,21 @@ span {
   top: 0;
   left: 0;
   background: url("../img/border-price.svg") left no-repeat;
+  border-radius: 5px;
+
+  @media (max-width: $mobile-width) {
+    width: 210px;
+    height: 90px;
+    margin-top: 30px;
+  }
 
   p {
     position: absolute;
-    top: 2px;
+    top: 5px;
     left: 23px;
     width: 120px;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24x;
     color: #FFFFFF;
 
     @media (max-width: $mobile-width) {
@@ -55,6 +96,7 @@ span {
 
     span {
       font-size: 35px;
+      font-weight: 600;
       line-height: 53px;
       color: #FFFFFF;
 
@@ -68,8 +110,8 @@ span {
 
 .hero__img-percent {
   position: absolute;
-  top: 7px;
-  right: -3px;
+  top: 3px;
+  right: 13px;
   width: 82px;
   height: 82px;
 }

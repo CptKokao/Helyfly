@@ -2,6 +2,12 @@
   margin-top: 60px;
   padding-top: 46px;
   border-top: 0.5px solid #C7C7C7;
+  
+  @media (max-width: $mobile-width) {
+    margin-top: 28px;
+    padding-top: 0;
+    border-top: none;
+  }
 
   h2 {
     width: 230px;
@@ -13,17 +19,18 @@
     @media (max-width: $mobile-width) {
       width: 100%;
       font-size: 28px;
+      font-weight: normal;
       line-height: 34px;
       text-align: center;
-      letter-spacing: 0;
+      letter-spacing: 1px;
     }
   }
 }
 
 .schedule__table {
-  min-width: 770px;
+  max-width: 770px;
   min-height: 458px;
-  margin-top: 25px;
+  margin-top: 45px;
   border: 1px solid #C7C7C7;
 
   font-size: 18px;
@@ -32,6 +39,7 @@
 
   @media (max-width: $tablet-width) {
     min-width: 720px;
+    margin-top: 37px;
   }
 
   @media (max-width: $mobile-width) {
@@ -58,11 +66,20 @@
 }
 
 .schedule__time {
-  padding: 25px 30px;
+  padding: 15px 30px;
   border-top: 0.5px solid #C7C7C7;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 30px;
+  }
+
+  p {
+    line-height: 33px;
+    letter-spacing: 1px;
+  }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
@@ -75,12 +92,13 @@
 
   @media (max-width: $mobile-width) {
     display: block;
-    font-weight: bold;
+    font-weight: 600;
   }
 }
 
 .schedule__rub {
   display: block;
+  font-weight: 600;
 
   @media (max-width: $mobile-width) {
     display: none;
@@ -89,30 +107,30 @@
 
 .schedule__btn {
   @media (max-width: $mobile-width) {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 
-.schedule__rating {
-  width: 100%;
-  padding: 20px;
-  border: none;
+// .schedule__rating {
+//   width: 100%;
+//   padding: 20px;
+//   border: none;
 
-  @media (max-width: $tablet-width) {
-    justify-content: flex-start;
-  }
+//   @media (max-width: $tablet-width) {
+//     justify-content: flex-start;
+//   }
 
-  @media (max-width: $mobile-width) {
-    border-top: 0.5px solid #C7C7C7;
-    margin: 0;
-    padding-left: 70px;
-    padding-top: 50px;
-  }
-}
+//   @media (max-width: $mobile-width) {
+//     border-top: 0.5px solid #C7C7C7;
+//     margin: 0;
+//     padding-left: 70px;
+//     padding-top: 50px;
+//   }
+// }
 
-.schedule__rating-img-cup {
-  @media (max-width: $mobile-width) {
-    top: 60%;
-    left: 30px;
-  }
-}
+// .schedule__rating-img-cup {
+//   @media (max-width: $mobile-width) {
+//     top: 60%;
+//     left: 30px;
+//   }
+// }

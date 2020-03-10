@@ -8,17 +8,17 @@ html {
   height: 100%;
 }
 
-.header {
+header {
   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
   flex: 0 0 auto;
 }
 
-.main {
+main {
   /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
   flex: 1 0 auto;
 }
 
-.footer {
+footer {
   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
   flex: 0 0 auto;
 }
@@ -26,7 +26,7 @@ html {
 body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
-  color: #37373F;
+  color: #37373f;
 
   display: flex;
   flex-direction: column;
@@ -59,17 +59,18 @@ img {
 
 a {
   text-decoration: none;
-  color: #5286EC;
+  color: #5286ec;
+  cursor: pointer;
+
+  &:hover {
+    color: #fc9b09;
+  }
 }
 
 .container {
   max-width: 1199px;
   margin: 0 auto;
   padding: 0 30px;
-
-  // @media (max-width: $tablet-width) {
-  //   max-width: 1100px;
-  // }
 
   @media (max-width: $mobile-width) {
     max-width: 767px;
@@ -93,37 +94,51 @@ a {
 .btn {
   width: 304px;
   height: 68px;
-  border: 3px solid #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25), 0px 4px 70px rgba(255, 255, 255, 0.7);
-  border-radius: 3px;
+  border: 3px solid #ffffff;
+  border-radius: 7px;
 
   font-weight: 900;
   font-size: 18px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    background: #fc9b09;
+    color: #ffffff;
+    border: 2px solid #fc9b09;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 275px;
+  }
 }
 
 .btn-orange {
   width: 129px;
   height: 50px;
 
-  background: #FFFFFF;
-  border: 2px solid #FC9B09;
+  background: #ffffff;
+  border: 2px solid #fc9b09;
   box-sizing: border-box;
   border-radius: 3px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #FC9B09;
+  color: #fc9b09;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    background: #fc9b09;
+    color: #ffffff;
+  }
 }
 
 .space {

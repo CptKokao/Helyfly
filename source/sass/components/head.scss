@@ -2,23 +2,31 @@
   display: flex;
   align-items: center;
   min-height: 100px;
-  // outline: 1px solid rgb(192, 255, 239);
+  &:after {
+    content:'';
+    min-height:inherit;
+    font-size:0;
+  }
 
   @media (max-width: $mobile-width) {
-    justify-content: space-around;
+    justify-content: space-between;
+    min-height: 60px;
   }
 }
 
 .head__phone {
   display: flex;
+  align-items: baseline;
   margin-left: 5px;
 
   p {
-    margin-left: 15px;
+    margin-left: 30px;
     color: #b3b3b3;
   }
 
   a {
+    margin-left: 5px;
+    font-size: 14px;
     color: #37373F
   }
 
@@ -33,5 +41,6 @@
 
   @media (max-width: $mobile-width) {
     display: block;
+    font-size: 14px;
   }
 }

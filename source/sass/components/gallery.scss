@@ -1,12 +1,22 @@
 .gallery {
   margin-top: 30px;
 
+  @media (max-width: $mobile-width) {
+    margin-top: 60px;
+  }
+
   h2 {
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
     letter-spacing: 1.9px;
     margin-bottom: 33px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 28px;
+      line-height: 34px;
+      text-align: center;
+    }
   }
 }
 
@@ -33,45 +43,48 @@
 }
 
 .gallery__more {
-  display: block;
-  position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
   margin-top: 35px;
   text-align: center;
 
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 25px;
-  letter-spacing: 1px;
+  a {
+    position: relative;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 1px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -15px;
+  
+      border: solid #c7c7c7;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: -15px;
+  
+      border: solid #c7c7c7;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+    }
+  }
 
   @media (max-width: $mobile-width) {
     display: none;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 41%;
-
-    border: solid #c7c7c7;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    right: 41%;
-
-    border: solid #c7c7c7;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
   }
 }
 
