@@ -6,6 +6,7 @@
     font-size: 20px;
     line-height: 29px;
     letter-spacing: 1.9px;
+    margin-bottom: 33px;
   }
 }
 
@@ -17,7 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 33px;
+
 
   & div:nth-child(4n + 4) {
     margin-right: 0;

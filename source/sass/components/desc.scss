@@ -105,13 +105,15 @@
   }
 }
 
-.desc__video {
+.desc__video,
+.desc__video iframe {
   position: absolute;
   top: 0;
   right: 25px;
 
   width: 554px;
   height: 374px;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     top: 65px;
