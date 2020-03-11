@@ -11,7 +11,7 @@
 
   h2 {
     width: 230px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 29px;
     letter-spacing: 1.5px;
@@ -92,13 +92,13 @@
 
   @media (max-width: $mobile-width) {
     display: block;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
 .schedule__rub {
   display: block;
-  font-weight: 600;
+  font-weight: 500;
 
   @media (max-width: $mobile-width) {
     display: none;
