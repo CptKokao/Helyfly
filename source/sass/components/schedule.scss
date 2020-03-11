@@ -1,8 +1,8 @@
 .schedule {
   margin-top: 60px;
   padding-top: 46px;
-  border-top: 0.5px solid #C7C7C7;
-  
+  border-top: 0.5px solid #c7c7c7;
+
   @media (max-width: $mobile-width) {
     margin-top: 28px;
     padding-top: 0;
@@ -31,7 +31,7 @@
   max-width: 770px;
   min-height: 458px;
   margin-top: 45px;
-  border: 1px solid #C7C7C7;
+  border: 1px solid #c7c7c7;
 
   font-size: 18px;
   line-height: 26px;
@@ -67,7 +67,7 @@
 
 .schedule__time {
   padding: 15px 30px;
-  border-top: 0.5px solid #C7C7C7;
+  border-top: 0.5px solid #c7c7c7;
   display: flex;
   justify-content: space-between;
   align-items: center;

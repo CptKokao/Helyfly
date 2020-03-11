@@ -29,7 +29,7 @@
   margin-left: 120px;
   padding-top: 38px;
   padding-bottom: 28px;
-  border-bottom: 0.5px solid #C7C7C7;
+  border-bottom: 0.5px solid #c7c7c7;
   letter-spacing: 1px;
 
   @media (max-width: $mobile-width) {
@@ -109,7 +109,7 @@
   margin-left: 70px;
   font-size: 14px;
   line-height: 21px;
-  color: #B3B3B3;
+  color: #b3b3b3;
 
   &::before {
     content: "";
@@ -142,7 +142,7 @@
   margin-top: 15px;
   font-size: 14px;
   line-height: 21px;
-  color: #B3B3B3;
+  color: #b3b3b3;
 
   @media (max-width: $mobile-width) {
     margin-top: 37px;
@@ -160,26 +160,26 @@
     font-size: 17px;
     line-height: 25px;
     text-align: center;
-  
+
     &::before {
       content: "";
       position: absolute;
       top: 5px;
       left: -15px;
-  
+
       border: solid #c7c7c7;
       border-width: 0 2px 2px 0;
       display: inline-block;
       padding: 3px;
       transform: rotate(45deg);
     }
-  
+
     &::after {
       content: "";
       position: absolute;
       top: 5px;
       right: -15px;
-  
+
       border: solid #c7c7c7;
       border-width: 0 2px 2px 0;
       display: inline-block;

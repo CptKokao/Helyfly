@@ -36,7 +36,8 @@
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: #586882, url("../img/helimain-mobile@2x.webp") center no-repeat;
+      background: #586882,
+        url("../img/helimain-mobile@2x.webp") center no-repeat;
       background-size: cover;
     }
   }
@@ -49,7 +50,7 @@
   letter-spacing: 2px;
   font-size: 40px;
   line-height: 49px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: $mobile-width) {
     width: 270px;
@@ -60,7 +61,7 @@
 }
 
 span {
-  color: #FC9B09;
+  color: #fc9b09;
 }
 
 .hero__price {
@@ -86,8 +87,8 @@ span {
     left: 23px;
     width: 120px;
     font-size: 20px;
-    line-height: 24x;
-    color: #FFFFFF;
+    line-height: 24px;
+    color: #ffffff;
 
     @media (max-width: $mobile-width) {
       font-size: 18px;
@@ -98,7 +99,7 @@ span {
       font-size: 35px;
       font-weight: 600;
       line-height: 53px;
-      color: #FFFFFF;
+      color: #ffffff;
 
       @media (max-width: $mobile-width) {
         font-size: 30px;

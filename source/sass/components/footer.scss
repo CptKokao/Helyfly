@@ -16,7 +16,7 @@
 }
 
 .footer__down {
-  background: #FAF9F8;
+  background: #faf9f8;
 }
 
 .footer__down-wrap {
@@ -25,10 +25,10 @@
   height: 77px;
   padding: 0 95px;
 
-  &:after{
-    content:'';
-    min-height:inherit;
-    font-size:0;
+  &::after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -56,10 +56,10 @@
   justify-content: space-between;
   align-items: center;
 
-  &:after{
-    content:'';
-    min-height:inherit;
-    font-size:0;
+  &::after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -83,7 +83,7 @@
   width: 40px;
   font-size: 15px;
   line-height: 18px;
-  color: #37373F;
+  color: #37373f;
 
   &::before {
     content: "";

@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   min-height: 100px;
-  &:after {
-    content:'';
-    min-height:inherit;
-    font-size:0;
+
+  &::after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -27,7 +28,7 @@
   a {
     margin-left: 5px;
     font-size: 14px;
-    color: #37373F
+    color: #37373f;
   }
 
   @media (max-width: $mobile-width) {
